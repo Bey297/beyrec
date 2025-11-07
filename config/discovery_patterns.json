@@ -1,0 +1,28 @@
+{
+    "parameters": [
+        "user", "username", "email", "login", "auth", "token", "session",
+        "password", "pass", "pwd", "key", "api_key", "access_token",
+        "id", "user_id", "page_id", "post_id", "category_id", "admin", "debug",
+        "sql", "query", "search", "filter", "sort", "order", "limit",
+        "file", "upload", "download", "filename", "path", "dir", "format",
+        "redirect", "url", "return", "next", "callback", "ref", "source",
+        "lang", "locale", "theme", "template", "view", "action", "method",
+        "test", "tests", "dev", "development", "staging", "beta",
+        "page", "offset", "start", "end", "per_page", "limit", "skip"
+    ],
+    "extensions": [
+        ".env", ".env.local", ".env.production", ".env.development",
+        ".git/config", ".git/HEAD", ".gitignore", ".git/index",
+        ".svn/entries", ".DS_Store", "Thumbs.db",
+        ".bak", ".backup", ".old", ".save", ".swp", ".tmp",
+        ".sql", ".dump", ".db", ".sqlite", ".sqlite3",
+        ".log", ".error", ".debug", ".trace",
+        ".key", ".pem", ".crt", ".cer", ".p12", ".pfx",
+        ".conf", ".config", ".ini", ".yaml", ".yml",
+        ".php.bak", ".asp.bak", ".jsp.bak", ".py.bak",
+        "web.config", "app.config", "database.yml",
+        "phpinfo.php", "test.php", "info.php", "backup.zip", "backup.tar.gz", "backup.sql",
+        "config.bak", "config.old", "wp-config.php.bak", "configuration.php.bak",
+        "admin.bak", "admin.old", ".htaccess.bak", "error_log"
+    ]
+}

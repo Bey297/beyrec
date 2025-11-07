@@ -1,0 +1,12 @@
+{
+    "Strict-Transport-Security": "Menerapkan koneksi HTTPS",
+    "Content-Security-Policy": "Mencegah serangan XSS",
+    "X-Content-Type-Options": "Mencegah sniffing tipe MIME",
+    "X-Frame-Options": "Mencegah clickjacking",
+    "X-XSS-Protection": "Mengaktifkan penyaringan XSS",
+    "Referrer-Policy": "Mengontrol informasi perujuk",
+    "Permissions-Policy": "Mengontrol kebijakan fitur",
+    "Cross-Origin-Embedder-Policy": "Mengontrol penyematan lintas-asal",
+    "Cross-Origin-Opener-Policy": "Mengontrol popup lintas-asal",
+    "Cross-Origin-Resource-Policy": "Mengontrol berbagi sumber daya lintas-asal"
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Pemindaian Recon Tool v2.0</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 1000px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: #0056b3; }
+        pre { background: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+        .section { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .section:last-child { border-bottom: none; }
+        .header-present { color: green; font-weight: bold; }
+        .header-missing { color: red; font-weight: bold; }
+        .tech-score { font-weight: bold; color: #007bff; }
+        .error { color: red; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .severity-high { color: red; font-weight: bold; }
+        .severity-medium { color: orange; font-weight: bold; }
+        .severity-low { color: green; font-weight: bold; }
+        .severity-unknown { color: gray; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Report Scan by beyrec</h1>
+        <p>Author bebey raksabayha</p>
+        <p><strong>Tanggal Pemindaian:</strong> {{ scan_date }}</p>
+        <p><strong>Target URL:</strong> {{ target_url }}</p>
+        <p><strong>Domain:</strong> {{ domain }}</p>
+
+        <div class="section">
+            <h2>Informasi HTTP</h2>
+            <pre>{{ http_info }}</pre>
+        </div>
+
+        <div class="section">
+            <h2>Deteksi Teknologi</h2>
+            {{ technologies }}
+        </div>
+
+        <div class="section">
+            <h2>Analisis Header Keamanan</h2>
+            {{ security_headers }}
+        </div>
+
+        <div class="section">
+            <h2>Catatan DNS</h2>
+            <pre>{{ dns_records }}</pre>
+        </div>
+
+        <div class="section">
+            <h2>Informasi SSL/TLS</h2>
+            <pre>{{ ssl_info }}</pre>
+        </div>
+
+        <div class="section">
+            <h2>Penemuan Konten</h2>
+            {{ discovery }}
+        </div>
+
+        <div class="section">
+            <h2>Endpoint Ditemukan</h2>
+            {{ discovered_endpoints }}
+        </div>
+
+        <div class="section">
+            <h2>Parameter Ditemukan</h2>
+            {{ discovered_parameters }}
+        </div>
+
+        <div class="section">
+            <h2>Informasi Jaringan</h2>
+            <pre>{{ network_info }}</pre>
+        </div>
+
+        <div class="section">
+            <h2>Saran OSINT</h2>
+            {{ osint_suggestions }}
+        </div>
+
+        <div class="section">
+            <h2>Indikator Kerentanan</h2>
+            {{ vulnerability_indicators }}
+        </div>
+
+        <div class="section">
+            <h2>Informasi WAF</h2>
+            {{ waf_info }}
+        </div>
+
+        <div class="section">
+            <h2>Saran Kerentanan</h2>
+            {{ vulnerability_suggestions }}
+        </div>
+
+        <div class="section">
+            <h2>Analisis JavaScript</h2>
+            <pre>{{ javascript_analysis }}</pre>
+        </div>
+
+        <div class="section">
+            <h2>Temuan CVE</h2>
+            {{ cve_findings }}
+        </div>
+
+        {{ error }}
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+{
+    "WordPress": [
+        {"type": "html", "pattern": "<meta name=\"generator\" content=\"WordPress", "score": 100},
+        {"type": "url", "pattern": "/wp-content/", "score": 90},
+        {"type": "url", "pattern": "/wp-includes/", "score": 90},
+        {"type": "body", "pattern": "wp-json", "score": 70},
+        {"type": "header", "name": "x-generator", "pattern": "WordPress", "score": 100},
+        {"type": "js", "pattern": "wp", "score": 50},
+        {"type": "js", "pattern": "WordPress", "score": 50},
+        {"type": "js", "pattern": "wp-includes", "score": 50},
+        {"type": "version", "pattern": "wp-includes/js/(?:\\d+\\.\\d+\\.\\d+)/", "score": 80},
+        {"type": "version", "pattern": "wp-content/themes/[^/]+/style\\.css\\?ver=(\\d+\\.\\d+\\.\\d+)", "score": 80}
+    ],
+    "Joomla": [
+        {"type": "html", "pattern": "<meta name=\"generator\" content=\"Joomla!", "score": 100},
+        {"type": "url", "pattern": "/media/com_joomla/", "score": 90},
+        {"type": "url", "pattern": "/components/com_content/", "score": 90},
+        {"type": "js", "pattern": "Joomla", "score": 70},
+        {"type": "js", "pattern": "com_content", "score": 70},
+        {"type": "version", "pattern": "media/system/js/(?:core|modal)\\.js\\?[\\d\\.]+", "score": 80}
+    ],
+    "Drupal": [
+        {"type": "html", "pattern": "<meta name=\"Generator\" content=\"Drupal", "score": 100},
+        {"type": "url", "pattern": "/sites/default/", "score": 90},
+        {"type": "url", "pattern": "/core/", "score": 80},
+        {"type": "header", "name": "x-drupal-cache", "pattern": "HIT|MISS", "score": 90},
+        {"type": "version", "pattern": "drupal\\.settings\\s*=\\s*\\{[^}]*version:\\s*'(\\d+\\.\\d+)'", "score": 80}
+    ],
+    "Magento": [
+        {"type": "url", "pattern": "/skin/frontend/", "score": 90},
+        {"type": "url", "pattern": "/app/design/frontend/", "score": 90},
+        {"type": "body", "pattern": "Magento", "score": 70},
+        {"type": "js", "pattern": "mage", "score": 60},
+        {"type": "js", "pattern": "Magento", "score": 60},
+        {"type": "version", "pattern": "mage/cookies\\.js\\?v=(\\d+\\.\\d+\\.\\d+)", "score": 80}
+    ],
+    "Shopify": [
+        {"type": "body", "pattern": "shopify", "score": 90},
+        {"type": "url", "pattern": "/cdn.shopify.com/", "score": 100},
+        {"type": "js", "pattern": "ShopifyBuy", "score": 80},
+        {"type": "header", "name": "x-shopify-shop-api-call-limit", "pattern": "\\d+/\\d+", "score": 90}
+    ],
+    "React": [
+        {"type": "js", "pattern": "ReactDOM", "score": 90},
+        {"type": "js", "pattern": "createRoot", "score": 90},
+        {"type": "js", "pattern": "useState", "score": 80},
+        {"type": "js", "pattern": "useEffect", "score": 80},
+        {"type": "html", "pattern": "data-reactroot", "score": 70},
+        {"type": "html", "pattern": "data-reactid", "score": 70},
+        {"type": "version", "pattern": "react-dom\\.production\\.min\\.js\\?(\\d+\\.\\d+\\.\\d+)", "score": 80}
+    ],
+    "Angular": [
+        {"type": "js", "pattern": "ng.probe", "score": 90},
+        {"type": "js", "pattern": "angular.version", "score": 90},
+        {"type": "html", "pattern": "ng-app", "score": 70},
+        {"type": "html", "pattern": "ng-controller", "score": 70},
+        {"type": "html", "pattern": "<app-root>", "score": 80},
+        {"type": "version", "pattern": "angular\\.js\\?(\\d+\\.\\d+\\.\\d+)", "score": 80}
+    ],
+    "Vue.js": [
+        {"type": "js", "pattern": "Vue.version", "score": 90},
+        {"type": "js", "pattern": "vue.runtime", "score": 80},
+        {"type": "html", "pattern": "data-v-", "score": 70},
+        {"type": "html", "pattern": "<template v-if", "score": 70},
+        {"type": "version", "pattern": "vue\\.runtime\\.esm\\.browser\\.js\\?(\\d+\\.\\d+\\.\\d+)", "score": 80}
+    ],
+    "Nginx": [
+        {"type": "header", "name": "server", "pattern": "nginx", "score": 100}
+    ],
+    "Apache": [
+        {"type": "header", "name": "server", "pattern": "Apache", "score": 100}
+    ],
+    "IIS": [
+        {"type": "header", "name": "server", "pattern": "IIS", "score": 100},
+        {"type": "header", "name": "x-powered-by", "pattern": "ASP.NET", "score": 80}
+    ],
+    "PHP": [
+        {"type": "header", "name": "x-powered-by", "pattern": "PHP", "score": 90},
+        {"type": "header", "name": "server", "pattern": "PHP", "score": 70}
+    ],
+    "Node.js": [
+        {"type": "header", "name": "x-powered-by", "pattern": "Express", "score": 90},
+        {"type": "js", "pattern": "express", "score": 70}
+    ],
+    "ASP.NET": [
+        {"type": "header", "name": "x-powered-by", "pattern": "ASP.NET", "score": 90},
+        {"type": "header", "name": "x-aspnet-version", "pattern": "\\d+\\.\\d+", "score": 80}
+    ],
+    "Cloudflare": [
+        {"type": "header", "name": "server", "pattern": "cloudflare", "score": 100},
+        {"type": "header", "name": "cf-ray", "pattern": "\\w+", "score": 90},
+        {"type": "header", "name": "cf-cache-status", "pattern": "\\w+", "score": 90},
+        {"type": "html", "pattern": "__cf_bm", "score": 80},
+        {"type": "html", "pattern": "cf-browser-verification", "score": 80}
+    ],
+    "AWS": [
+        {"type": "header", "name": "x-amz-id-2", "pattern": "\\w+", "score": 90},
+        {"type": "header", "name": "x-cache", "pattern": "Miss from cloudfront", "score": 80}
+    ],
+    "Akamai": [
+        {"type": "header", "name": "server", "pattern": "AkamaiGHost", "score": 100},
+        {"type": "header", "name": "x-akamai", "pattern": "\\w+", "score": 90}
+    ],
+    "Sucuri": [
+        {"type": "header", "name": "server", "pattern": "Sucuri/Cloudproxy", "score": 100}
+    ],
+    "Google Analytics": [
+        {"type": "html", "pattern": "gtag.js", "score": 90},
+        {"type": "html", "pattern": "ga.js", "score": 90},
+        {"type": "js", "pattern": "GoogleAnalyticsObject", "score": 80},
+        {"type": "js", "pattern": "_ga", "score": 80}
+    ],
+    "Google Tag Manager": [
+        {"type": "html", "pattern": "gtm.js", "score": 90},
+        {"type": "html", "pattern": "GTM-", "score": 90},
+        {"type": "html", "pattern": "googletagmanager", "score": 90}
+    ],
+    "Hotjar": [
+        {"type": "html", "pattern": "hotjar.com", "score": 90},
+        {"type": "js", "pattern": "hj", "score": 80}
+    ],
+    "HSTS": [
+        {"type": "header", "name": "strict-transport-security", "pattern": "max-age", "score": 100}
+    ],
+    "CSP": [
+        {"type": "header", "name": "content-security-policy", "pattern": "default-src", "score": 100}
+    ],
+    "XSS Protection": [
+        {"type": "header", "name": "x-xss-protection", "pattern": "1", "score": 100}
+    ],
+    "X-Frame-Options": [
+        {"type": "header", "name": "x-frame-options", "pattern": "SAMEORIGIN|DENY", "score": 100}
+    ]
+}
